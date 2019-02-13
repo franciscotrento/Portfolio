@@ -1,0 +1,4 @@
+{{ range . }}
+<i class="fas fa-tag"></i>
+<a class="tag-link" href="/tags/{{ . | urlize }}/">{{ . }}</a>
+{{ end }}

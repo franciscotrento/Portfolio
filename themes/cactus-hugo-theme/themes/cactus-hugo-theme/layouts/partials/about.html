@@ -1,0 +1,26 @@
+<section id="about">
+ {{ with .Site.Author.intro }}
+<p>{{ . | markdownify }}</p>
+{{ end }}
+{{ with .Site.Author.location }}
+<p>I am located in beautiful {{ . }}</p> 
+{{ end }}
+{{ if .Site.Author.social }}
+Find me on
+{{ with .Site.Author.social_github }}
+<a class="icon" target="_blank" href="http://github.com/{{ . }}">
+  <i class="fab fa-github"></i>
+</a>
+{{ end }}
+{{ with .Site.Author.social_wb }}
+<a class="icon" target="_blank" href="https://weibo.com/{{ . }}">
+  <i class="fab fa-weibo"></i>
+</a>
+{{ end }}
+{{ with .Site.Author.social_tg }}
+<a class="icon" target="_blank" href="https://t.me/{{ . }}">
+  <i class="fab fa-telegram"></i>
+</a>
+{{ end }}
+{{ end }}
+</section>

@@ -1,0 +1,121 @@
+<!-- styles -->
+<link rel="stylesheet" href="/lib/font-awesome/css/fontawesome-all.min.css">
+<link rel="stylesheet" href="/lib/justified-gallery/css/justifiedGallery.min.css">
+
+<!-- jquery -->
+
+<script src="/lib/jquery/jquery.min.js"></script>
+<script src="/lib/justified-gallery/js/jquery.justifiedGallery.min.js"></script>
+<script src="/js/main.js"></script>
+
+<!-- code -->
+
+{{ if eq .Site.Params.syntaxHighlighter "highlight.js" }}
+<script src="/js/highlight.min.js"></script>
+{{ else if eq .Site.Params.syntaxHighlighter "prism.js" }}
+<script src="/js/prism.min.js"></script>
+
+{{ if eq .Site.Params.syntaxHighlighter "highlight.js" }}
+<script>
+  $(document).ready(function () {
+    hljs.configure({
+      classPrefix: '',
+      useBR: false
+    });
+    $('pre.code-highlight > code, pre > code').each(function (i, block) {
+      if (!$(this).hasClass('codeblock')) {
+        $(this).addClass('codeblock');
+      }
+      hljs.highlightBlock(block);
+    });
+  });
+</script>
+{{ end }}
+
+{{ end }}
+
+<!-- statistics  -->
+{{ if not (eq .Site.Params.Statistics.busuanzi false) }}
+<script src="/js/busuanzi.pure.mini.js"></script>
+{{ end }}
+
+<!-- search -->
+
+{{ with .Site.Params.algolia }} {{ if (isset . "appId") | and (isset . "apiKey") | and (isset . "indexName") }}
+<script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.19.1/moment-with-locales.min.js" integrity="sha256-TbOIe++NbC9P3KTtUMJ5wcROlBdnRqrPleLdpPg3xxE="
+  crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/algoliasearch/3.24.5/algoliasearch.min.js" integrity="sha256-vUvLcn3X0cXhote4PNwW6d+fzjJR0hoD+yGFeVaElew="
+  crossorigin="anonymous"></script>
+<script>
+  var algoliaClient = algoliasearch('{{ .appId }}', '{{ .apiKey }}');
+  var algoliaIndex = algoliaClient.initIndex('{{ .indexName }}');
+</script>
+{{ end }} {{ end }}
+
+<!-- Google Analytics -->
+
+<!-- Baidu Analytics -->
+
+<!-- Comments -->
+
+{{ if .IsPage }}
+{{ if not (eq .Params.comments false) }}
+{{ if not (eq .Site.Params.Comment.wildfire false) }}
+<script>
+  var wildfireConfig = () => ({
+    useDev: true,
+    version: '0.5.4',
+    databaseProvider: 'firebase',
+    databaseConfig: {
+      apiKey: "AIzaSyDKkAQJ2kq1epzv-SMv9ZqoPy3ElPHH2KQ",
+      authDomain: "pt-k8s.firebaseapp.com",
+      databaseURL: "https://pt-k8s.firebaseio.com",
+      projectId: "pt-k8s",
+      storageBucket: "pt-k8s.appspot.com",
+      messagingSenderId: "58587425788"
+    },
+    theme: 'light',
+    locale: 'zh-CN',
+    defaultAvatarURL: 'https://image.flaticon.com/icons/svg/621/621863.svg'
+  })
+</script>
+<script src="https://unpkg.com/wildfire-comment"></script>
+{{ end }}
+ {{ if .Site.DisqusShortname }}
+<script>
+  var disqus_config = function () {
+    this.page.url = '{{ .Permalink }}'; {
+      {
+        if .Params.disqusIdentifier
+      }
+    }
+    this.page.identifier = '{{ .Params.disqusIdentifier }}'; {
+      {
+        else
+      }
+    }
+    this.page.identifier = '{{ .URL | relURL }}' {
+      {
+        end
+      }
+    }
+  };
+  (function () {
+    // Don't ever inject Disqus on localhost--it creates unwanted
+    // discussions from 'localhost:1313' on your Disqus account...
+    if (window.location.hostname == "localhost") {
+      return;
+    }
+    var d = document,
+      s = d.createElement('script');
+    var disqus_shortname = '{{ .Site.DisqusShortname }}';
+    s.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+
+    s.setAttribute('data-timestamp', +new Date());
+    (d.head || d.body).appendChild(s);
+  })();
+</script>
+{{ end }}
+{{ end }}
+{{ end }}
+

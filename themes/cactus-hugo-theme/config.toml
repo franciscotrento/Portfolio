@@ -1,0 +1,135 @@
+baseURL = "https://blog.spanda.io"
+languageCode = "zh-cn"
+defaultContentLanguage = "zh-cn"
+hasCJKLanguage = true
+title = "Spanda Handbook"
+theme = "cactus-hugo-theme"
+disqusShortname = "" #"cnops"
+googleAnalytics = "UA-79417627-1"
+paginate = 7
+canonifyurls = true
+enableEmoji = true
+enableRobotsTXT = true
+
+pygmentsCodeFences = true
+pygmentsOptions = ""
+
+# Use the Chroma stylesheet
+pygmentsUseClasses = true
+pygmentsUseClassic = false
+
+# See https://help.farbox.com/pygments.html
+pygmentsStyle = "trac"
+
+[permalinks]
+  post = "/:year/:month/:day/:filename/"
+
+[taxonomies]
+  tag = "tags"
+  category = "categories"
+  archive = "archives"
+
+[author]
+  name = "ysicing"
+  intro = "Hello! I am a Pythonista and open source advocate."
+  location = "Beijing,China"
+  social = true
+  social_github = "ysicing"
+  social_wb = "caibaodoge"
+  social_tg = "ysicing"
+  social_wechat = ""
+  baidu_vc = "dEokJGf7L5" # Optional, Baidu verification code
+  sogou_vc = "LuU1sV91WK" # Optional, Sogou verification code
+  so_vc = "5c9f31fea90672bafa5cd4a578d0c328" # Optional, 360 verification code
+  google_vc = "" # Optional, Google verification code
+  bing_vc = "C77B93E43E4B5EC895A210DFCE219A3B" # Optional, Bing verification code
+  alexa_vc = "" # Optional, alexa verification code
+
+# Menu Configuration
+[[menu.header]]
+  weight = 1
+  identifier = "home"
+  name = "Home"
+  url = "/"
+[[menu.header]]
+  weight = 2
+  identifier = "archives"
+  name = "Archives"
+  url = "/archives"
+[[menu.header]]
+  weight = 3
+  identifier = "dalao"
+  name = "Link"
+  url = "/dalao"
+[[menu.header]]
+  weight = 4
+  identifier = "Disclaimer"
+  name = "Disclaimer"
+  url = "/disclaimer"
+[[menu.header]]
+  weight = 5
+  identifier = "about-site"
+  name = "About"
+  url = "/sitelog"
+
+[[menu.footer]]
+  weight = 1
+  identifier = "home"
+  name = "Home"
+  url = "/"
+
+[[menu.footer]]
+  weight = 2
+  identifier = "Categories"
+  name = "Categories"
+  url = "/categories"
+
+[[menu.footer]]
+  weight = 3
+  identifier = "tags"
+  name = "Tags"
+  url = "/tags"
+
+[[menu.footer]]
+  weight = 4
+  identifier = "about-site"
+  name = "About"
+  url = "/sitelog"
+
+[params]
+  dateFormat = "2006年1月2日 15时04分05秒"
+  keywords = ["development", "linux", "kubernetes", "docker", "Go", "python"]
+  # syntaxHighlighter = "highlight.js"
+  description = "A handbook maintained by ysicing."
+  coverImage = "doge.jpg"
+  last_update_commit = "a2d93b1"
+  last_update_commit_more = "2018-07-01-08-a2d93b1"
+  [[statistics]]
+    busuanzi = true
+
+  [[comment]]
+    wildfire = true
+    # support wilddog/firebase
+    dbtype = "firebase"
+  
+  [[params.customCSS]]
+    # support classic,light,white,dark
+    href = "css/style-light.css"
+  [[params.customCSS]]
+    href = "css/rtl.css"
+
+  [[params.sharingOptions]]
+    name = "Weibo"
+    icon = "fa-weibo"
+    url = "http://service.weibo.com/share/share.php?url=%s"
+
+  [[params.sharingOptions]]
+    name = "Twitter"
+    icon = "fa-twitter"
+    url = "https://twitter.com/intent/tweet?text=%s"
+
+  [[params.sharingOptions]]
+    name = "Google+"
+    icon = "fa-google-plus"
+    url = "https://plus.google.com/share?url=%s"
+

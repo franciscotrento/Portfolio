@@ -1,0 +1,101 @@
+baseurl = "https://example.com/"
+title = "francisco trento"
+# themesDir = "../../"
+theme = "whiteplain"
+languageCode = "ja"
+# Disqus shortname
+#disqusShortname = ""
+# google analytics tracking id
+#googleAnalytics = ""
+pygmentsCodefences = true
+pygmentsUseClasses = true
+pygmentsOptions = "linenos=table"
+
+[params]
+  # useCDN = false
+  # showShareIcons = true
+  # Date format
+  #dateFormat = "January 2, 2006"
+
+
+  # Gravatar or Abatar image
+  #gravatar = "Gravatar email or MD5 Hash"
+  #avatar = "/images/strange1.jpg"
+
+  #twitter = "Twitter username"
+  #facebook = "trento"
+  #googleplus = "Googleplus username"
+  #instagram = "Instagram username"
+  #tumblr = "Tumblr username"
+  #flickr = "Flickr username"
+  #reddit = "Reddit username"
+  #linkedin = "Linkedin username"
+  #slideshare = "Slideshare username"
+  #github = "Github username"
+  #gitlab = "Gitlab username"
+  #bitbucket = "Bitbucket username"
+  #stackoverflow = "Stackoverflow username"
+  #jsfiddle = "Jsfiddle username"
+  #codepen = "Codepen username"
+  #deviantart = "Deviantart username"
+  #behance = "Behance username"
+  #dribbble = "Dribbble username"
+  #wordpress = "Wordpress username"
+  #medium = "Medium username"
+  #foursquare = "Foursquare username"
+  #xing = "Xing username"
+  #quora = "Quora username"
+  #youtube = "Youtube username"
+  #vimeo = "Vimeo username"
+  #whatsapp = "Whatsapp username"
+  #skype = "Skype username"
+  #snapchat = "Snapchat username"
+  #pinterest = "Pinterest username"
+  #telegram = "Telegram username"
+  #vine = "Vine username"
+  #email = "Your email"
+
+[taxonomies]
+  category = "categories"
+  tag = "tags"
+  series = "series"
+
+[[menu.main]]
+  name = "projects"
+  weight = 1
+  identifier = "projects"
+  url = "/projects/"
+
+
+[[menu.main]]
+  name = "processes"
+  weight = 2
+  identifier = "processes"
+  url = "/processes/"
+
+  [[menu.main]]
+  name = "publications"
+  weight = 4
+  identifier = "publications"
+  url = "/publications/publications"
+
+[[menu.main]]
+  name = "cv"
+  weight = 5
+  identifier = "cv"
+  url = "/cv/cv.pdf"
+
+[[menu.main]]
+
+  name = "about"
+  weight = 6
+  identifier = "about"
+  url = "/about/"
+
+[[menu.footer]]
+  name = "About"
+  weight = 1
+  identifier = "about"
+  url = "/about/"
+
+theme = "whiteplain"

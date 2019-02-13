@@ -1,0 +1,16 @@
+{{ with .Site.Params.showProject }}
+<section id="projects">
+    <span class="h1">
+        <a href="#">Projects</a>
+    </span>
+<ul class="project-list">
+{{ range .Site.Params.Project }}
+<li class="project-item">
+<a href="{{ .url }}">{{ .name }}</a>:
+<p>{{ .desc }}</p>
+</li>
+{{ end }}
+
+</ul>
+</section>
+{{ end }}

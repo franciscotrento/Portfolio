@@ -1,0 +1,21 @@
+
+<footer id="footer">
+  <div class="footer-left">
+ &copy; {{ now.Format "2006" }}
+ {{ with .Site.Params.footer.copyright }}
+ {{ . | safeHTML }}
+ {{ else }}
+ {{ with .Site.Author.name }}
+ {{ . }}
+ {{ else }}
+ {{ with .Site.Title }}{{ . }}{{ end }}{{ end }}{{ end }}| Powered by <a href="https://gohugo.io/" target="_blank">Hugo</a> & <a href="https://github.com/ysicing/cactus-hugo-theme" target="_blank">Cactus</a> .
+  </div>
+  <div class="footer-right">
+    <nav>
+      <ul>
+ {{ partial "menu.html" (dict "menu" .Site.Menus.footer "root" $) }}
+      </ul>
+    </nav>
+  </div>
+</footer>
+{{ partial "script.html" . }}

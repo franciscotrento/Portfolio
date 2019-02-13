@@ -1,0 +1,40 @@
+<div class="content index my4">
+    <article class="post" itemscope="" itemtype="http://schema.org/BlogPosting">
+        <header>
+            <h1 class="posttitle" itemprop="name headline">
+                {{ .Title }}
+            </h1>
+            <div class="meta">
+                <span class="author" itemprop="author" itemscope="" itemtype="http://schema.org/Person">
+                    <span itemprop="name">{{ .Site.Author.name }}</span>
+                </span>
+                <div class="postdate">
+                    {{ partial "internal/new-date.html" . }}
+                </div>
+                {{ if (not (eq .Params.showTags false)) }}
+                    {{ with .Params.tags }} 
+                    {{ $tagsLength := len . }} 
+                        {{ if gt $tagsLength 0 }}
+                        <div class="article-tag">
+                            {{ partial "post/tag.html" . }}
+                        </div>
+                        {{ end }}
+                    {{ end }}
+                {{ end }}
+                
+                    {{ partial "post/category.html" . }}
+                
+                <div class="article-tag">
+                    <span id="busuanzi_container_page_pv">
+                        阅读量
+                        <span id="busuanzi_value_page_pv"></span>
+                    </span>
+                </div>
+            </div>
+        </header>
+        <div class="content" itemprop="articleBody">
+ {{ .Content }}
+        </div>
+    </article>
+ {{ partial "post/comment.html" . }}
+</div>

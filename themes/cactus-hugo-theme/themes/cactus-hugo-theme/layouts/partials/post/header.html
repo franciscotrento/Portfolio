@@ -1,0 +1,79 @@
+<div id="header-post">
+  <a id="menu-icon" href="#" class="active">
+    <i class="fas fa-bars fa-lg"></i>
+  </a>
+  <a id="menu-icon-tablet" href="#" class="active">
+    <i class="fas fa-bars fa-lg"></i>
+  </a>
+  <a id="top-icon-tablet" href="#" onclick="$('html, body').animate({ scrollTop: 0 }, 'fast');" style="display:none;">
+    <i class="fas fa-chevron-up fa-lg"></i>
+  </a>
+  <span id="menu" style="visibility: visible;">
+    <span id="nav">
+<ul> {{ partial "menu.html" (dict "menu" .Site.Menus.header "root" $) }}</ul>
+    </span>
+    <br>
+    <span id="actions">
+      <ul>
+
+ 
+{{ with .PrevInSection }}
+<li>
+<a class="icon" href="{{ .RelPermalink }}" data-tooltip="{{ .Title }}">
+    <i class="fas fa-chevron-left" aria-hidden="true" onmouseover="$('#i-prev').toggle();" onmouseout="$('#i-prev').toggle();"></i>
+  </a>
+</li>
+{{ end }}
+{{ with .NextInSection }}
+<li>
+<a class="icon" href="{{ .RelPermalink }}" data-tooltip="{{ .Title }}">
+    <i class="fas fa-chevron-right" aria-hidden="true" onmouseover="$('#i-next').toggle();" onmouseout="$('#i-next').toggle();"></i>
+  </a>
+</li>
+{{ end }}
+
+
+        <li>
+          <a class="icon" href="#" onclick="$('html, body').animate({ scrollTop: 0 }, 'fast');">
+            <i class="fas fa-chevron-up" aria-hidden="true" onmouseover="$('#i-top').toggle();" onmouseout="$('#i-top').toggle();"></i>
+          </a>
+        </li>
+        <li>
+<a class="icon" href="#post-wildfire">
+            <i class="fas fa-comment-alt" aria-hidden="true" onmouseover="$('#i-comment').toggle();" onmouseout="$('#i-comment').toggle();"></i>
+          </a>
+        </li>
+        <li>
+          <a class="icon" href="#">
+            <i class="fas fa-share-alt" aria-hidden="true" onmouseover="$('#i-share').toggle();" onmouseout="$('#i-share').toggle();"
+              onclick="$('#share').toggle();return false;"></i>
+          </a>
+        </li>
+      </ul>
+      <span id="i-prev" class="info" style="display: none;">Previous post</span>
+      <span id="i-next" class="info" style="display: none;">Next post</span>
+      <span id="i-top" class="info" style="display: none;">Back to top</span>
+      <span id="i-comment" class="info" style="display: none;">少年来一发</span>
+      <span id="i-share" class="info" style="display: none;">Share post</span>
+    </span>
+    <br>
+    <div id="share" style="display: none">
+      <ul>
+ {{ range .Site.Params.sharingOptions }}
+<li>
+  <a class="icon" target="new" href="{{ printf .url (substr (querify " x " $.Permalink) 2) }}"><i class="fab {{ .icon }}" aria-hidden="true"></i></a>
+</li>
+{{ end }}
+      </ul>
+
+    </div>
+{{ if and (gt .WordCount 100 ) (ne .Params.toc "false") }}
+<div id="toc">
+  <ol class="toc">
+    {{ .TableOfContents }}
+  </ol>
+</div>
+{{ end }}
+   
+  </span>
+</div>

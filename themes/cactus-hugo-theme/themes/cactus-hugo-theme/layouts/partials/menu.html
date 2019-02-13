@@ -1,0 +1,12 @@
+{{ range .menu }}
+  <li>
+    {{ if and (in .URL "://") (not (in .URL (printf "%s" $.root.Site.BaseURL))) }}
+      <a href="{{ .URL | safeURL }}" target="_blank">
+    {{ else }}
+      <a href="{{ .URL | relLangURL }}">
+    {{ end }}
+      {{ $name := (i18n (printf "global.%s" .Identifier)) }}
+      <span>{{ if eq (len $name) 0 }}{{ .Name }}{{ else }}{{ $name }}{{ end }}</span>
+    </a>
+  </li>
+{{ end }}
