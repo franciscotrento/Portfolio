@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>francisco trento</title>
+    <link>https://example.com/processes/</link>
+    <description>Recent content on francisco trento</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>ja</language>
+    <lastBuildDate>Tue, 01 Jan 2019 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="https://example.com/processes/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>A spectropoetic love letter</title>
+      <link>https://example.com/processes/loveletter/</link>
+      <pubDate>Tue, 01 Jan 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://example.com/processes/loveletter/</guid>
+      <description>Published on Simulacrum // Liefde - Love // (Amsterdam, February, 2019)</description>
+    </item>
+    
+    <item>
+      <title>Extraordinary Adventures in Neurodiversity With Dougie Jones</title>
+      <link>https://example.com/processes/dougie/</link>
+      <pubDate>Mon, 02 Apr 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://example.com/processes/dougie/</guid>
+      <description>Published on Inflexions Journal. A writing experiment made with Halbe Kuipers. The enabling constraint was to use only the resources Google Docs could provide. A fabulation around neurodiversity and Dougie Jones, a character introduced on the third season of Twin Peaks.
+Access the complete text here  </description>
+    </item>
+    
+    <item>
+      <title>I&#39;m vrey into you</title>
+      <link>https://example.com/processes/vrey/</link>
+      <pubDate>Fri, 02 Mar 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://example.com/processes/vrey/</guid>
+      <description>After meeting in Montréal, two creatures wanted to keep meeting and writing from the germ that was activated last summer. Kathy Acker and McKenzie Wark’s I’m Very Into You fabulated into I’m Vrey Into You. Vrey, as said after one returns from the Red Room in Twin Peaks, where words have another temporality. This resonated with our bodies in different chronological times zones while still living in a spectropoetic togetherness. Soon we couldn’t stop working in vrey, and now, 7 weeks after saying “See you soon!</description>
+    </item>
+    
+    <item>
+      <title>Struggles of an Abstract Animal</title>
+      <link>https://example.com/processes/animals/</link>
+      <pubDate>Tue, 02 Apr 2013 00:00:00 +0000</pubDate>
+      
+      <guid>https://example.com/processes/animals/</guid>
+      <description>Published on Inflexions No. 10: Modes of Exhaustion* (Oct 2017) 
+PDF version</description>
+    </item>
+    
+  </channel>
+</rss>

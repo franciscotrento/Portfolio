@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Publications on francisco trento</title>
+    <link>https://example.com/publications/</link>
+    <description>Recent content in Publications on francisco trento</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>ja</language>
+    
+	<atom:link href="https://example.com/publications/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title></title>
+      <link>https://example.com/publications/publications/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://example.com/publications/publications/</guid>
+      <description>List of Publications
+Refereed Journal Publications
+ Trento, F.B., Kuipers, H. (2018)&amp;quot;Extraordinary Adventures in Neurodiversity with Dougie Jones&amp;quot; Inflexions, (INfLx pOp up 1: Diversity in Diversity* (Sept 2018). https://goo.gl/ArVLkg [artistic-research text]
+ Trento, F.B.(2017)&amp;quot;Vivendo sob os murmúrios de Atlas&amp;quot; Galáxia (São Paulo), (n. 35), p. 132-139. [1]10.1590&amp;frasl;1982-255401327661
+ Trento, F.B.(2015)&amp;quot;Sobre a urgência do pensamento de Michel Foucault.&amp;quot; Galáxia (São Paulo), (30), p. 185-190. [2]10.1590&amp;frasl;1982-25542015202
+ Trento, F.B., Venanzoni, T.(2014)&amp;quot;Afetos contemporâneos e comunicação - algumas perspectivas&amp;quot; Rumores (USP), v.</description>
+    </item>
+    
+  </channel>
+</rss>

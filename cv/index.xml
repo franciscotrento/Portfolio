@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>francisco trento</title>
+    <link>https://example.com/cv/</link>
+    <description>Recent content on francisco trento</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>ja</language>
+    
+	<atom:link href="https://example.com/cv/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title></title>
+      <link>https://example.com/cv/cv/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://example.com/cv/cv/</guid>
+      <description>Curriculum Vitae
+Beltrame Trento, Francisco
+Gender : male
+Date and place of birth
+July 20, 1987. Bariri, São Paulo, Brazil.
+Nationality: Brazilian, Italian.
+Current Residence and contact details:
+Montreal, QC, Canada
+francisco.trento@gmail.com
+francisco.trento@concordia.ca
+Education and degrees awarded Concordia University, Montreal, QC, Canada
+Postdoctoral Fellowship. Fine Arts, Faculty of Fine Arts, May 2018 – May 2019
+• Research Topic : Propositions on Images and Spectrology in Research-Creation • Postdoc Superviso r: Erin Manning, Ph.</description>
+    </item>
+    
+  </channel>
+</rss>

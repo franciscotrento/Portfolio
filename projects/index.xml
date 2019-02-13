@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>francisco trento</title>
+    <link>https://example.com/projects/</link>
+    <description>Recent content on francisco trento</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>ja</language>
+    <lastBuildDate>Tue, 01 Jan 2019 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="https://example.com/projects/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>I&#39;m vrey into you</title>
+      <link>https://example.com/projects/vrey/</link>
+      <pubDate>Tue, 01 Jan 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://example.com/projects/vrey/</guid>
+      <description>I&amp;rsquo;m  vrey  into you. By Francisco Trento and Anouk Hoogendoorn</description>
+    </item>
+    
+    <item>
+      <title>The Specters of Svalbard</title>
+      <link>https://example.com/projects/svalbard/</link>
+      <pubDate>Mon, 02 Apr 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://example.com/projects/svalbard/</guid>
+      <description>The Specters of Svalbard. We will produce a procedural film dealing with materialities that surround Svalbard’s Seed Bank, its tensions with climate change and its potential for fabulatory storytelling through event-led film-making. At least two two-week trips to the surroundings of Svalbard’s Seed Vault in Longyearbyen will be organized. There are conceptual resonances between the concepts of seedbank and seed vault and the fabulatory stories that circulate in Svalbard. That is why we do not propose the use of a traditional script.</description>
+    </item>
+    
+    <item>
+      <title>spctrz</title>
+      <link>https://example.com/projects/spctrz/</link>
+      <pubDate>Fri, 02 Mar 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://example.com/projects/spctrz/</guid>
+      <description>spctrz expresses the tension between necessity and contingency, exploring do-it-yourself improvised rituals to invoke specters. Specters, as Derrida exposes, are neither creatures from the past or from the future. They are disjointers of time. We explored different media: from found-footage of VHS tapes to collected old notes. Techniques to invoke the ghosts of neurodiversity are necessary to disrupt the chronological neurotypical time or task-oriented daily lives.
+  the film features songs by Anouk Hoogendoorn and Matisse APSimons.</description>
+    </item>
+    
+  </channel>
+</rss>
